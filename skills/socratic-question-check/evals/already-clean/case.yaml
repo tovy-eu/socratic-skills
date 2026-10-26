@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: already-clean
+expected_outcome: |
+  The skill recognises the question is already a clean, open, self-contained down-question and says so briefly without inventing problems.

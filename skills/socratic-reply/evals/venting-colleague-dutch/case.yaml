@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: venting-colleague-dutch
+expected_outcome: |
+  A short Dutch reply containing exactly one Socratic question that reuses the colleague's own words, plus a brief analysis and alternatives.

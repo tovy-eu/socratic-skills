@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: wants-to-say-not-ask
+expected_outcome: |
+  The skill recognises the user wants to say something, offers a plain statement first, and then a question as alternative.
