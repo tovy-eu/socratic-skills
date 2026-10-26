@@ -91,6 +91,6 @@ Facts go into the repo as they happen, not into chat. Map: `docs/agents/capture.
 - Run locally: nothing to run. Edit the files in `references/`, then `scripts/sync-references.sh` to copy them into each skill.
 - Test: `scripts/validate-skills.sh` (free, structural). `cd skills/<skill> && claude plugin eval .` (billed model runs). Cases live in `skills/*/evals/`.
 - Targets: Claude (plugin, `.skill`) and GitHub Copilot in VS Code (`scripts/install-copilot.*`, personal skills in `~/.copilot/skills`).
-- Deploy: merge to `main`; publish `.skill` packages as a GitHub release when the skills change.
+- Deploy: merge to `main`. The `.skill` packages live in `dist/`, built by `python3 scripts/package_skills.py`. Commit them with every skill change; `scripts/validate-skills.sh` checks they are current.
 - Log rules (see `references/logging.md`, decision #5): opt-in, local, facts only, roles not names, never age or motives, never in git.
 - Content rules: skills hold the method as instructions, never quotes or passages from the book. Keep SKILL.md short (procedure, example, output format); background goes in the reference.

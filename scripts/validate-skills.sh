@@ -5,6 +5,7 @@
 # 3. description max 1024 chars
 # 4. every relative Markdown link in SKILL.md resolves
 # 5. references/ copies match the canonical files
+# 6. dist/*.skill packages are up to date (run: python3 scripts/package_skills.py)
 set -u
 cd "$(dirname "$0")/.."
 fail=0
@@ -26,5 +27,12 @@ for dir in skills/*/; do
     cmp -s "$ref" "$dir/references/$(basename "$ref")" || err "$s" "references/$(basename "$ref") out of sync (run scripts/sync-references.sh)"
   done
 done
+tmp=$(mktemp -d)
+python3 scripts/package_skills.py "$tmp" >/dev/null
+for pkg in "$tmp"/*.skill; do
+  b=$(basename "$pkg")
+  cmp -s "$pkg" "dist/$b" || err "dist" "$b missing or out of date (run python3 scripts/package_skills.py)"
+done
+rm -rf "$tmp"
 [ "$fail" -eq 0 ] && echo "OK: $(ls -d skills/*/ | wc -l) skills valid"
 exit "$fail"

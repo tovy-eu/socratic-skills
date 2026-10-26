@@ -28,7 +28,7 @@ Copilot reads the same `SKILL.md` format. Personal skills live in `~/.copilot/sk
 
 - Windows: `powershell -ExecutionPolicy Bypass -File scripts\install-copilot.ps1`
 - macOS / Linux: `scripts/install-copilot.sh`
-- By hand: copy the three folders from `skills/` into `~/.copilot/skills/` (`%USERPROFILE%\.copilot\skills\` on Windows).
+- By hand: copy the three folders from `skills/` (or unzip the `dist/*.skill` files) into `~/.copilot/skills/` (`%USERPROFILE%\.copilot\skills\` on Windows).
 
 Then in Copilot chat use `/socratic-reply`, `/socratic-question-check` or `/socratic-conversation`, or describe the task and let Copilot pick the skill. If a skill does not show up, run `scripts/validate-skills.sh`: Copilot ignores a skill silently when its name does not match its folder.
 
@@ -43,7 +43,7 @@ Not yet verified inside Copilot itself. Your organisation can also switch agent 
 
 **Claude Code, one project**: copy the skill folders you want into `.claude/skills/` of that project.
 
-**Claude (web, desktop, mobile)**: open a `SKILL.md` in this repo, or the `.skill` package from the latest release, and save it as a skill.
+**Claude (web, desktop, mobile)**: upload the ready-made packages from `dist/` (`socratic-reply.skill`, `socratic-question-check.skill`, `socratic-conversation.skill`) as skills. Each package holds the skill and its references.
 
 **No Claude at all**: read `skills/*/SKILL.md` and `references/socratic-method.md` as method cards. They work on paper too.
 
@@ -74,6 +74,8 @@ cd skills/socratic-reply && claude plugin eval .
 These are billed model runs. For a free structural check (names, descriptions, links, synced references) run `scripts/validate-skills.sh`. The assertions check the mechanical things (one question, no "but", the colleague's own words reused); the quality of the question remains a human judgment.
 
 ## Working here
+
+- After changing a file in `references/` or a `SKILL.md`: `scripts/sync-references.sh`, then `python3 scripts/package_skills.py`, then commit `dist/`. `scripts/validate-skills.sh` fails when `dist/` is out of date.
 
 - Rules: `CLAUDE.md`. Capture map: `docs/agents/capture.md`.
 - Log a fact: `/capture <what happened>`.
