@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: log-after-debrief
+expected_outcome: |
+  A debrief, then a log entry in ./test-log that records the meeting facts neutrally, with roles, open follow-ups and no judgments about people.

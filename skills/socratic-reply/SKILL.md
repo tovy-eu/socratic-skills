@@ -7,7 +7,7 @@ description: Turn something a colleague said or wrote into one good Socratic que
 
 Goal: a reply that keeps the colleague thinking, instead of a reply that shows what the user thinks. One message in, one question out.
 
-This is step 1 of a set of three. `socratic-question-check` audits a question the user drafted themselves; `socratic-conversation` prepares a whole conversation. Method background is in `references/socratic-method.md`; read section 8 (pitfalls) and 9 (open, closed, why) when formulating, section 3 (attitude) if the user seems to want to vent or win.
+This is step 1 of a set of three. `socratic-question-check` audits a question the user drafted themselves; `socratic-conversation` prepares a whole conversation. Method background is in [references/socratic-method.md](references/socratic-method.md); read section 8 (pitfalls) and 9 (open, closed, why) when formulating, section 3 (attitude) if the user seems to want to vent or win.
 
 ## Input
 What the colleague said or wrote, plus optional context and what the user wants from the exchange. Reply in the language of the colleague's message. Short, direct sentences. No filler, no praise.
@@ -57,3 +57,6 @@ Output:
 - Irritation after a good question is normal. Don't soften the next message into advice.
 - "That's obvious" or "you're making it complicated" means you are close. Ask calmly: "Why is it obvious?"
 - Not disagreeing is not agreeing. The user's own view comes later, over a bridge (see `socratic-conversation`).
+
+## Log (only on request)
+When the user says "log it" or asks to keep a log, read [references/logging.md](references/logging.md) and append one entry to their local log: facts first, roles not names, interpretation only in its labelled field. Never log unasked. If you can write files here, end your answer with one line: "Say 'log it' to save this to your log."

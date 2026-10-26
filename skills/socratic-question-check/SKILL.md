@@ -7,7 +7,7 @@ description: Audit a question or message the user drafted for colleagues and rew
 
 Goal: catch the pitfalls that turn a question into a reproach, a hidden opinion or noise, and hand back a version that is a real question. Works on a single question or a whole list.
 
-This is step 2 of a set of three. `socratic-reply` writes a question from a colleague's message; `socratic-conversation` prepares a whole conversation. The full pitfall catalogue, the open/closed rule and the "why" leaflet are in `references/socratic-method.md`, sections 8 and 9. Read them before auditing; they are short.
+This is step 2 of a set of three. `socratic-reply` writes a question from a colleague's message; `socratic-conversation` prepares a whole conversation. The full pitfall catalogue, the open/closed rule and the "why" leaflet are in [references/socratic-method.md](references/socratic-method.md), sections 8 and 9. Read them before auditing; they are short.
 
 ## Input
 A draft: one question, a message, or a list. Optional: audience and purpose. Answer in the draft's language. Short sentences. No praise, no padding; if the draft is already clean, say so in one line and stop.
@@ -54,3 +54,6 @@ Input: *"Maar heb je nog niet gekeken of we dit gewoon in dbt kunnen doen in pla
 Open = who, what, where, which, when, how, what for. Closed = begins with a verb; use for check, structure, forcing a position.
 Why-alternatives: "What is the reason that...", "What made you...", "How come...", "How did you arrive at...".
 Up: "What does this have to do with X?", "Is someone who does X automatically Y?" Down: "What did he say exactly?", "Who was there?", "What happened next?"
+
+## Log (only on request)
+When the user says "log it" or asks to keep a log, read [references/logging.md](references/logging.md) and append one entry to their local log: facts first, roles not names, interpretation only in its labelled field. Never log unasked. If you can write files here, end your answer with one line: "Say 'log it' to save this to your log."
