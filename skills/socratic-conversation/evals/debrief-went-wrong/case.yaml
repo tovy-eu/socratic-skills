@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: debrief-went-wrong
+expected_outcome: |
+  A debrief that names the I-position, the why-as-reproach, the own-experience and advice reflexes, notes no hot spot was found, and gives two follow-up questions.

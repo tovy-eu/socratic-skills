@@ -86,8 +86,9 @@ Facts go into the repo as they happen, not into chat. Map: `docs/agents/capture.
 
 ## Project-specific
 
-- What it is:
-- Stack:
-- Run locally:
-- Test:
-- Deploy:
+- What it is: three Claude skills for Socratic questioning at work (`socratic-reply`, `socratic-question-check`, `socratic-conversation`), distilled from Elke Wiss, *Socrates op sneakers*. Shared as a Claude Code plugin and as `.skill` packages.
+- Stack: Markdown skills (`skills/*/SKILL.md`), one canonical reference (`references/socratic-method.md`), bash sync script, plugin manifest in `.claude-plugin/`.
+- Run locally: nothing to run. Edit `references/socratic-method.md`, then `scripts/sync-references.sh` to copy it into each skill.
+- Test: `cd skills/<skill> && claude plugin eval .` (billed model runs). Cases live in `skills/*/evals/`.
+- Deploy: merge to `main`; publish `.skill` packages as a GitHub release when the skills change.
+- Content rules: skills hold the method as instructions, never quotes or passages from the book. Keep SKILL.md short (procedure, example, output format); background goes in the reference.

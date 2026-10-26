@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: loaded-but-question
+expected_outcome: |
+  Flags but-question, comma-idiot/reproach, cocktail question and hidden advice; rewrites to one open question and offers a statement version.

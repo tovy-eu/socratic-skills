@@ -1,0 +1,7 @@
+{
+  "name": "socratic-skills",
+  "description": "Three skills for Socratic questioning at work, based on Elke Wiss, Socrates op sneakers: socratic-reply, socratic-question-check, socratic-conversation.",
+  "version": "1.0.0",
+  "author": { "name": "Giel Nijkamp" },
+  "skills": "./skills/"
+}

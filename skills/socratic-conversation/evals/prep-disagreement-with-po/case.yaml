@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: prep-disagreement-with-po
+expected_outcome: |
+  A one-minute plan following the output template: core question and case, permission opener, 4-6 fact questions, hot spot question, 3-4 up questions (own direction first), at most two confront/suppose-that options with conditions, a bridge sentence plus the user's view, and watch-for signals.
