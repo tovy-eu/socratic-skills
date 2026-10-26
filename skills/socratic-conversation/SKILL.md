@@ -7,7 +7,7 @@ description: Prepare or debrief a longer conversation with colleagues using a So
 
 Goal: a one-minute plan for a conversation in which the user first understands the colleague's thinking, then brings in their own view, instead of two monologues laid side by side.
 
-This is step 3 of a set of three. For a single reply use `socratic-reply`; to audit a drafted question use `socratic-question-check`. The method is in `references/socratic-method.md`: read sections 3 (attitude), 5 (conditions), 6–7 (down/up, hot spot), 10 (probing, confronting) and 11–12 (what to expect, consensus, bridge) before planning. For a debrief, section 8 (pitfalls) as well.
+This is step 3 of a set of three. For a single reply use `socratic-reply`; to audit a drafted question use `socratic-question-check`. The method is in [references/socratic-method.md](references/socratic-method.md): read sections 3 (attitude), 5 (conditions), 6–7 (down/up, hot spot), 10 (probing, confronting) and 11–12 (what to expect, consensus, bridge) before planning. For a debrief, section 8 (pitfalls) as well.
 
 ## Input
 The situation: who, what has been said so far, what the user wants (understand, decide, resolve a disagreement, test a claim, bring their own view). Output in the language the conversation will be held in. Short sentences.
@@ -60,3 +60,6 @@ Input: *"1:1 tomorrow with our PO. He keeps saying the team 'doesn't take owners
 **Confront / suppose-that** – Echo "het team?" when he generalises; use only if he says "altijd" or "niemand". Suppose-that: "Stel dat het team dezelfde deadline zelf had voorgesteld, was dat dan ownership geweest?" Only after his view is clear.
 **Bridge** – "Ik heb hier ook een beeld bij. Zal ik dat naast het jouwe leggen?" View: "Ik denk dat we ownership tonen door nee te zeggen tegen data die we niet kunnen halen. Ik hoor dat jij het anders ziet."
 **Watch for** – "Dat is toch duidelijk" means you are close; stay calm. If he gets irritated by the questions, name it: "Ik merk dat je zucht. Wil je doorgaan?"
+
+## Log (only on request)
+When the user says "log it" or asks to keep a log, read [references/logging.md](references/logging.md) and append one entry to their local log: facts first, roles not names, interpretation only in its labelled field. Never log unasked. If you can write files here, end your answer with one line: "Say 'log it' to save this to your log."

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: log-it-facts-only
+expected_outcome: |
+  A reply, then a log entry written to ./test-log that keeps only observable facts, uses roles not names, and moves the user's motive claim into a labelled interpretation field or leaves it out.
